@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b2d385; /* Color de fondo similar */
+  margin: 0;
+}
+
+.diana {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+      red 0%, red 10%, white 10%, white 20%, 
+      red 20%, red 30%, white 30%, white 40%, 
+      red 40%, red 50%, white 50%, white 60%, 
+      red 60%, red 70%, white 70%, white 80%, 
+      red 80%, red 90%, white 90%, white 100%);
+  position: relative;
+  border: 5px solid #ddd; /* Borde externo */
+}
+
+/* Estilos comunes para las líneas */
+.linea {
+  position: absolute;
+  background-color: black;
+}
+
+/* Línea vertical */
+.vertical {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Línea horizontal */
+.horizontal {
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid gray;
+        }
+
+        /* ✅ Estilo cuando el input es correcto */
+        input:in-range {
+            border: 2px solid green;
+            background-color: #d4f8d4;
+        }
+
+        /* ❌ Estilo cuando el input es incorrecto */
+        input:out-of-range {
+            border: 2px solid red;
+            background-color: #f8d4d4;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="edad">Introduce tu edad:</label>
+    <input type="number" id="edad" name="edad" min="0" max="120" required>
+
+</body>
+</html>

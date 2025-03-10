@@ -1,0 +1,74 @@
+body {
+    background-color: lightblue; /* Color por defecto */
+}
+
+.container {
+    border-color: black;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center; /* Alinea los bloques centrados */
+}
+
+/* Estilos por defecto para los bloques */
+.block1, .block2, .block3, .block4, .block5, .block6, .block7 {
+    background-color: white; /* Color de fondo por defecto */
+    border: 1px solid black; /* Borde negro */
+    margin: 5px; /* Margen entre bloques */
+    display: inline-block; /* Alinea los bloques de forma horizontal */
+    vertical-align: top; /* Asegura que se alineen en la parte superior */
+    height: 100px; /* Altura fija para los bloques */
+}
+
+/* Para móviles pequeños (max-width: 599px) */
+@media (max-width: 599px) {
+    body {
+        background-color: black;
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa el 100% */
+    }
+
+    .block1, .block2, .block3, .block4, .block5, .block6, .block7 {
+        width: 48%; /* 2 bloques por fila */
+        height: 50px; 
+    }
+}
+
+/* Para tabletas (min-width: 600px) and (max-width: 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    .container {
+        width: 100%; /* El contenedor ocupa el 100% */
+    }
+
+    .block1, .block2, .block3, .block4, .block5, .block6, .block7 {
+        width: 32%; /* 3 bloques por fila */
+        height: 75px; 
+    }
+}
+
+/* Para ordenadores de escritorio (min-width: 900px) */
+@media (min-width: 900px) {
+    body {
+        background-color: rgb(255, 122, 122);
+    }
+
+    .container {
+        width: 80%; /* El contenedor ocupa el 80% */
+    }
+
+    /* Los primeros 4 bloques: 2 por fila */
+    .block1, .block2, .block3, .block4 {
+        width: 48%; /* 2 bloques por fila */
+    }
+
+    /* Los bloques 5, 6, y 7: 3 bloques por fila */
+    .block5, .block6, .block7 {
+        width: 30%; /* 3 bloques por fila */
+    }
+}

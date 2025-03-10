@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Tablas</title>
+    <style>
+        /* Estilos para las tablas */
+        table {
+            border-collapse: collapse;
+            margin: 10px; /* Espacio entre tablas */
+            display: inline-block; /* Para que las tablas estén una al lado de la otra */
+            width: 300px;
+        }
+
+        /* Aplicamos borde a th y td (NO a tr) */
+        th, td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 5px;
+            width: 200px;
+        }
+        
+        /* Alineación del contenido */
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tablas numéricas</h1>
+
+    <table>
+        <tr>
+            <th colspan="3">Ejercicios de tablas</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td colspan="3">Apartado A</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="3">Ejercicios de tablas</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="2">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td colspan="3">Apartado B</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
