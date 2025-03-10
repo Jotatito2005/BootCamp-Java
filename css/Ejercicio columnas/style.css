@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(248, 165, 98); /* Color de fondo del HTML */
+  }
+  
+  h1 {
+    color: black; /* Color inicial del título */
+  }
+  
+  h1:hover {
+    color: red; /* Cambia el color al pasar el ratón */
+  }
+  
+  p {
+    column-count: 3; /* Divide el párrafo en 3 columnas */
+    column-gap: 40px; /* Separación entre columnas */
+    column-rule: 2px solid red; /* Línea roja de separación */
+  }
+  
+  p::selection {
+    background-color: yellow; /* Color de fondo al seleccionar el texto */
+    color: blue; /* Color del texto al seleccionarlo */
+  }
