@@ -1,0 +1,50 @@
+.color-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .magenta {
+    background-color: magenta;
+  }
+  
+  .cyan {
+    background-color: cyan;
+  }
+  
+  .plus, .equal {
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .color-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre las filas de colores */
+  }
+
+  body {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    height: 100vh;           /* Asegura que el body ocupe toda la altura de la pantalla */
+    margin: 0;               /* Elimina márgenes predeterminados */
+    flex-direction: column;  /* Para que los círculos se alineen de arriba a abajo si es necesario */
+}
